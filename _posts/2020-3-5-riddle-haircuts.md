@@ -46,20 +46,20 @@ So the three effective cases are:
     
     $$\text{probability} = (3/4) * (3/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] $$
 
 2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany
     * this situation is kind of awkward because both of us pass up on this barber. if it were me, I probably wouldn't have the heart to pass them up but let's overlook that
     
     $$\text{probability} = (3/4) * (1/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] + 15 $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] + 15 $$
 
 3. Tiffany finishes first [
     
     $$\text{probability} = (1/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
 
 
 ## Conditional expectations for wait time
@@ -77,11 +77,11 @@ We can rearange these two equations to get $$\mathbb{E} min(X_1 ... X_n) ] = \fr
 
 So:
 
-$$\mathbb{E}\text{first finisher time}] = \frac{15}{(4+1)} = 3\text{ minutes}$$
+$$\mathbb{E}[\text{first finisher time}] = \frac{15}{(4+1)} = 3\text{ minutes}$$
 
 By similar logic (with maybe a bit more work than I'm giving it credit for):
 
-$$\mathbb{E}\text{arbitrary not first finishing barber}] = 9\text{ minutes}$$
+$$\mathbb{E}[\text{arbitrary not first finishing barber}] = 9\text{ minutes}$$
 
 ## Plugging in
 
@@ -90,20 +90,20 @@ Back to the three cases:
     
     $$\text{probability} = (3/4) * (3/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] = 9\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] = 9\text{ minutes} $$
 
 2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany
     * this situation is kind of awkward because both of us pass up on this barber. if it were me, I probably wouldn't have the heart to pass them up but let's overlook that
     
     $$\text{probability} = (3/4) * (1/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] + 15 = 9+15\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] + 15 = 9+15\text{ minutes} $$
 
 3. Tiffany finishes first
     
     $$\text{probability} = (1/4)$$
     
-    $$\mathbb{E}\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany finishes first}] + 15 = 3+15\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany finishes first}] + 15 = 3+15\text{ minutes} $$
 
 
 ```python
