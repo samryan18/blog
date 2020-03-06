@@ -42,14 +42,17 @@ The first column (Tiffany finishes first) can be treated as a single case since 
 
 So the three effective cases are:
 
-1. Another barber finishes first (not Tiffany) and the other customer is not waiting for Tiffany [probability = (3/4) * (3/4)]
+1. Another barber finishes first (not Tiffany) and the other customer is not waiting for Tiffany
+    * probability = (3/4) * (3/4)
     * $$E[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] $$
 
-2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany [probability = (3/4) * (1/4)]
+2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany
+    * probability = (3/4) * (1/4)
     * this situation is kind of awkward because both of us pass up on this barber. if it were me, I probably wouldn't have the heart to pass them up but let's overlook that
     * $$E[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] + 15 $$
 
-3. Tiffany finishes first [probability = (1/4)]
+3. Tiffany finishes first [
+    * probability = (1/4)
     * $$E[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
 
 
