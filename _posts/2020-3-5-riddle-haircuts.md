@@ -50,6 +50,7 @@ So the three effective cases are:
 3. Tiffany finishes first [probability = (1/4)]
     * $$E[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
 
+
 ## Conditional expectations for wait time
 This is the tricky part.
 
