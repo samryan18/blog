@@ -67,13 +67,13 @@ This is the tricky part.
 
 Let's digress for a minute and think about calculating expectation for the minimum of a set of i.i.d. uniform random variables. (Credit to a [blog post comment](https://danieltakeshi.github.io/2016/09/25/the-expectation-of-the-minimum-of-iid-uniform-random-variables/) for helping me think about this portion of the problem.)
 
-Say we have n random variables $$(X_1 ... X_n)$$, each distributed Uniform(0,15) and we want the expecation for the minimum of these variables, i.e. $$\mathbb{E} min(X_1 ... X_n) ]$$.
+Say we have n random variables $$(X_1 ... X_n)$$, each distributed Uniform(0,15) and we want the expecation for the minimum of these variables, i.e. $$\mathbb{E} [ min(X_1 ... X_n) ]$$.
 
 Lets imagine an X_{n+1} added to the set. Two properties will be true: 
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = 1/(N+1)$$ because any of these N+1 i.i.d. variables have equal probability of being minimum
-* $$Pr[X_{n+1} < min(X_1 ... X_n)] = E[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$\mathbb{E} min(X_1 ... X_n) ] / 15$$
+* $$Pr[X_{n+1} < min(X_1 ... X_n)] = E[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$\mathbb{E}[ min(X_1 ... X_n) ] / 15$$
 
-We can rearange these two equations to get $$\mathbb{E} min(X_1 ... X_n) ] = \frac{15}{(N+1)}$$
+We can rearange these two equations to get $$\mathbb{E}[ min(X_1 ... X_n) ] = \frac{15}{(N+1)}$$
 
 So:
 
