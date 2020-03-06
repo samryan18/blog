@@ -85,7 +85,8 @@ $$\mathbb{E}[\text{arbitrary not first finishing barber}] = 9\text{ minutes}$$
 
 ## Plugging in
 
-Back to the three cases:
+#### Back to the three cases:
+
 1. Another barber finishes first (not Tiffany) and the other customer is not waiting for Tiffany
     
     $$\text{probability} = (3/4) * (3/4)$$
@@ -105,6 +106,7 @@ Back to the three cases:
     
     $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany_finish_time} | \text{tiffany finishes first}] + 15 = 3+15\text{ minutes} $$
 
+## Plug it into the calculator:
 
 ```python
 probabilities = [
