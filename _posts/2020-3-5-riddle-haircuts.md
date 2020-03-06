@@ -69,7 +69,7 @@ Let's digress for a minute and think about calculating expectation for the minim
 
 Say we have n random variables $$(X_1 ... X_n)$$, each distributed Uniform(0,15) and we want the expecation for the minimum of these variables, i.e. $$\mathbb{E} [ min(X_1 ... X_n) ]$$.
 
-Lets imagine an X_{n+1} added to the set. Two properties will be true: 
+Lets imagine an $$X_{n+1}$$ added to the set. Two properties will be true: 
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = 1/(N+1)$$ because any of these N+1 i.i.d. variables have equal probability of being minimum
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = \mathbb{E}[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$\mathbb{E}[ min(X_1 ... X_n) ] / 15$$
 
