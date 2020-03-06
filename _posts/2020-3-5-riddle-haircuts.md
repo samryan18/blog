@@ -46,20 +46,20 @@ So the three effective cases are:
     
     $$\text{probability} = (3/4) * (3/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany finish time} | \text{tiffany does not finish first}] $$
 
 2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany
     * this situation is kind of awkward because both of us pass up on this barber. if it were me, I probably wouldn't have the heart to pass them up but let's overlook that
     
     $$\text{probability} = (3/4) * (1/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany does not finish first}] + 15 $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany finish time} | \text{tiffany does not finish first}] + 15 $$
 
 3. Tiffany finishes first
     
     $$\text{probability} = (1/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany finish time} | \text{tiffany finishes first}] + 15 $$
 
 
 ## Conditional expectations for wait time
@@ -71,7 +71,7 @@ Say we have n random variables $$(X_1 ... X_n)$$, each distributed Uniform(0,15)
 
 Lets imagine an X_{n+1} added to the set. Two properties will be true: 
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = 1/(N+1)$$ because any of these N+1 i.i.d. variables have equal probability of being minimum
-* $$Pr[X_{n+1} < min(X_1 ... X_n)] = E[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$\mathbb{E}[ min(X_1 ... X_n) ] / 15$$
+* $$Pr[X_{n+1} < min(X_1 ... X_n)] = \mathbb{E}[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$\mathbb{E}[ min(X_1 ... X_n) ] / 15$$
 
 We can rearange these two equations to get $$\mathbb{E}[ min(X_1 ... X_n) ] = \frac{15}{(N+1)}$$
 
@@ -90,20 +90,20 @@ Back to the three cases:
     
     $$\text{probability} = (3/4) * (3/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] = 9\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany_finish_time} | \text{tiffany does not finish first}] = 9\text{ minutes} $$
 
 2. Another barber finishes first (not Tiffany) and the other customer is waiting for Tiffany
     * this situation is kind of awkward because both of us pass up on this barber. if it were me, I probably wouldn't have the heart to pass them up but let's overlook that
     
     $$\text{probability} = (3/4) * (1/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany does not finish first}] + 15 = 9+15\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany_finish_time} | \text{tiffany does not finish first}] + 15 = 9+15\text{ minutes} $$
 
 3. Tiffany finishes first
     
     $$\text{probability} = (1/4)$$
     
-    $$\mathbb{E}[\text{wait_time}] = E[\text{tiffany_finish_time} | \text{tiffany finishes first}] + 15 = 3+15\text{ minutes} $$
+    $$\mathbb{E}[\text{wait_time}] = \mathbb{E}[\text{tiffany_finish_time} | \text{tiffany finishes first}] + 15 = 3+15\text{ minutes} $$
 
 
 ```python
