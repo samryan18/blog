@@ -2,9 +2,6 @@
 layout: post
 title: FiveThirtyEight Riddler Classic
 
-categories:
-  - riddle
-
 last_modified_at: 2020-03-05T13:01:27-05:00
 ---
 
