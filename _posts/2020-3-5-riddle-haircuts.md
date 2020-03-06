@@ -56,7 +56,7 @@ This is the tricky part.
 
 Let's digress for a minute and think about calculating expectation for the minimum of a set of i.i.d. uniform random variables. (Credit to a [blog post comment](https://danieltakeshi.github.io/2016/09/25/the-expectation-of-the-minimum-of-iid-uniform-random-variables/) for helping me think about this portion of the problem.)
 
-Say we have n random variables (X_1 ... X_n), each distributed Uniform(0,15) and we want the expecation for the minimum of these variables, i.e. E[ min(X_1 ... X_n) ].
+Say we have n random variables $$(X_1 ... X_n)$$, each distributed Uniform(0,15) and we want the expecation for the minimum of these variables, i.e. $$E[ min(X_1 ... X_n) ]$$.
 
 Lets imagine an X_{n+1} added to the set. Two properties will be true: 
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = 1/(N+1)$$ because any of these N+1 i.i.d. variables have equal probability of being minimum
