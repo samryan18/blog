@@ -17,6 +17,8 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 > One Friday morning, you arrive at the barber shop to see that all four barbers are cutting hair, and there is one customer waiting. You have no idea how far along any of the barbers is in their haircuts, and you don’t know whether or not the customer in line will hold out for Tiffany.
 >
 > What is the expected wait time for getting a haircut from Tiffany?
+>
+>
 > <cite><a href="https://fivethirtyeight.com/features/can-you-get-a-haircut-already/">Can You Get A Haircut Already?</a></cite>
 
 ## How to approach this?
