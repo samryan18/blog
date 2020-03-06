@@ -34,6 +34,7 @@ Feels safe to assume these are independent so we can create a 2x2 grid to repres
 | **customer is waiting**     	| p=(1/4)*(1/4)         	| p=(3/4)*(1/4)               	|
 | **customer is not waiting** 	| p=(1/4)*(3/4)         	| p=(3/4)*(3/4)               	|
 
+
 The first column (Tiffany finishes first) can be treated as a single case since if Tiffany finishes first, the other customer will surely get seated by her.
 
 So the three effective cases are:
