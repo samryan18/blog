@@ -95,19 +95,19 @@ Back to the three cases:
 
 
 ```python
-case1_probability = (3 / 4) * (3 / 4)
-case2_probability = (3 / 4) * (1 / 4)
-case3_probability = 1 / 4
+probabilities = [
+    (3 / 4) * (3 / 4),
+    (3 / 4) * (1 / 4),
+    (1 / 4)
+]
 
-case1_e_wait_time = 9
-case2_e_wait_time = 9 + 15
-case3_e_wait_time = 3 + 15
+expecations = [
+    9,
+    9+15,
+    3+15
+]
 
-total_e_wait_time = (
-    (case1_probability * case1_e_wait_time)
-    + (case2_probability * case2_e_wait_time)
-    + (case3_probability * case3_e_wait_time)
-)
+total_e_wait_time = sum([p*e for p,e in zip(probabilities, expecations)])
 
 print(f"E[wait time] = {total_e_wait_time} minutes!")
 ```
@@ -130,29 +130,23 @@ def run_sim():
 
     if tiffany_remaining_time < min(barber_remaining_time):
         # tiffany finishes first!
-        case = 1
         wait_time = tiffany_remaining_time + 15
     elif customer_is_waiting_for_tiffany:
         # another barber finishes first but customer is waiting for Tiffany!
         # slightly awkward because we both pass up this barber
-        case = 2
         wait_time = tiffany_remaining_time + 15
     else:
         # another barber finishes first and customer is down for that barber!
-        case = 3
         wait_time = tiffany_remaining_time
 
-    return wait_time, case
+    return wait_time
 
 
 wait_times = []
-cases = []
 N_TRIALS = 10000000
-for _ in range(N_TRIALS):
 
-    w, c = run_sim()
-    wait_times.append(w)
-    cases.append(c)
+for _ in range(N_TRIALS):
+    wait_times.append(run_sim())
 
 print(f"95% CI:")
 print(
