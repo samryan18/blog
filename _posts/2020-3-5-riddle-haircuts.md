@@ -62,11 +62,11 @@ Lets imagine an X_{n+1} added to the set. Two properties will be true:
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = 1/(N+1)$$ because any of these N+1 i.i.d. variables have equal probability of being minimum
 * $$Pr[X_{n+1} < min(X_1 ... X_n)] = E[ min(X_1 ... X_n) ] / 15$$ because $$X_{n+1}$$ is another uniform RV from 0 to 15 so the probability it is below the minimum is simply the probability mass below $$E[ min(X_1 ... X_n) ] / 15$$
 
-We can rearange these two equations to get $$E[ min(X_1 ... X_n) ] = 15/(N+1)$$
+We can rearange these two equations to get $$E[ min(X_1 ... X_n) ] = \frac{15}{(N+1)}$$
 
 So:
 
-$$E[\text{first finisher time}] = 15/(4+1) = 3\text{ minutes}$$
+$$E[\text{first finisher time}] = \frac{15}{(4+1)} = 3\text{ minutes}$$
 
 By similar logic (with maybe a bit more work than I'm giving it credit for):
 
