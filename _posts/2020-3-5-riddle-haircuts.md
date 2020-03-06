@@ -6,7 +6,7 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 ---
 
 
-[Can You Get A Haircut Already?](https://docs.google.com/forms/d/e/1FAIpQLSeALqYLduRWUM_qQl4I7PhKZvXXUiNPx-FZ1iZEs9P6FQzwUw/viewform)
+[Can You Get A Haircut Already?](https://fivethirtyeight.com/features/can-you-get-a-haircut-already/)
 ## The Question
 > At your local barbershop, there are always four barbers working simultaneously. Each haircut takes exactly 15 minutes, and there’s almost always one or more customers waiting their turn on a first-come, first-served basis.
 >
