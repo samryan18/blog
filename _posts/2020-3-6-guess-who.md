@@ -102,7 +102,7 @@ In this case, a game state can be captured by the following:
 2. How many characters has player 1 narrowed it down to?
 3. How many characters has player 2 narrowed it down to?
 
-In the code, I capture states with a tuple (X_1, X_2) representing how many characters the two players have narrowed it down to.
+In the code, I capture states with a tuple $$(X_1, X_2)$$ representing how many characters the two players have narrowed it down to.
 
 I swap the ordering if player 2 is up.
 
