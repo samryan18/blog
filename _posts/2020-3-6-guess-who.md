@@ -54,16 +54,15 @@ $$\begin{eqnarray}
     d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
                         &= (1/X) * (2X - 4M) \nonumber \\
     \rightarrow (1/X) * (2X - 4M) &= 0 \nonumber \\
-    \text{now we can remove }(2/x)&\text{ since we're setting to 0 to find an optimum} \nonumber \\
     X-2M = 0 &\rightarrow X = (1/2)*M \nonumber \\
 \end{eqnarray}$$
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
-$$\begin{align}
+$$\begin{eqnarray}
     d^2 E[\text{n_elim} | M] / dM^2 &= d((1/X) * (2X - 4M)) / dM \nonumber \\
                                     &= -4/X \nonumber \\
                                     &= \text{This is strictly negative so we have a max!} \nonumber \\
-\end{align}$$
+\end{eqnarray}$$
 
 So the optmal result here is to always choose M = X/2.
 
