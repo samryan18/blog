@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guess Who (Riddler Classic )
+title: Guess Who (Riddler Classic)
 
 last_modified_at: 2020-03-07T13:01:27-05:00
 ---
