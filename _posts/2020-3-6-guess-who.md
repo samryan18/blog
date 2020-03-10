@@ -28,7 +28,11 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 
 
 # One Player Optimal strategy
-Before bringing in the game theory side of things, lets figure out the optimal strategy to minimize guesses in the absence of an opponent. Asking a question which eliminates people in this case removes some proportion of the people. Let's start to build an intuition with an example before jumping into some math. There are N characters, each has a probability of 1/N of being the selected character. We can ask a question which has the possibility of eliminating any number of them from 1...N-1.
+Before bringing in the game theory side of things, lets figure out the optimal strategy to minimize guesses in the absence of an opponent. Asking a question which eliminates people in this case removes some proportion of the people.
+
+Let's start to build an intuition with an example before jumping into some math.
+
+There are N characters, each has a probability of 1/N of being the selected character. We can ask a question which has the possibility of eliminating any number of them from 1...N-1.
 
 Our goal is to narrow it down quickly. There are lots of ways to frame this:
     * binary search
