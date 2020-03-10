@@ -56,9 +56,9 @@ To find the optimal value of a function, we can set the derivative to zero:
 $$\begin{eqnarray}
     \frac{E[\text{n_elim} | M]}{dM} =& \frac{d((1/X) * (2MX - 2M^2))}{dM} \nonumber \\ \\
                         =& (1/X) * (2X - 4M) \nonumber \\ \\
-    \rightarrow (1/X) * (2X - 4M) =& 0 \nonumber \\ \\
-    X-2M =& 0 \nonumber \\ \\
-    \rightarrow M =& \frac{X}{2} \nonumber \\ \\
+    \rightarrow (1/X) * (2X - 4M^*) =& 0 \nonumber \\ \\
+    X-2M^* =& 0 \nonumber \\ \\
+    \rightarrow M^* =& \frac{X}{2} \nonumber \\ \\
 \end{eqnarray}$$
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
