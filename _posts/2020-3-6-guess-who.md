@@ -61,7 +61,8 @@ $$\begin{eqnarray}
 To confirm our critical point is a maximum, we set the second derivative to zero:
 $$\begin{align}
     d^2 E[\text{n_elim} | M] / dM^2 &= d((1/X) * (2X - 4M)) / dM \nonumber \\
-                                    &= -4/X \text{(strictly negative) (so we have a max!)} \nonumber \\
+                                    &= -4/X \nonumber \\
+                                    &= \text{This is strictly negative so we have a max!} \nonumber \\
 \end{align}$$
 
 So the optmal result here is to always choose M = X/2.
