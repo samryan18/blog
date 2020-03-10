@@ -41,7 +41,7 @@ Our goal is to narrow it down quickly. There are lots of ways to frame this:
 Theorem:
 > If we have X characters remaining, and we ask a binary question which applies to M characters, we have a M/X chance of eliminating X-M characters and an (X-M)/X chance of eliminating M characters.
 
-I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
+I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice corollary:
 
 $$\begin{eqnarray}
     E[\text{n_elim} | M] =& (M/X) * (X-M)  + ((X-M)/X) * M \nonumber \\ \\
