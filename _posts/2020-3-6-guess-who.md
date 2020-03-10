@@ -106,7 +106,9 @@ An **action** is just... well an action that a user can take.
 
 In this case, users can ask about a binary trait. Let's break this down a bit. 
 
-> **Example situation:** There are 10 characters left and 1 of them has pink hair, and the user asks "does your character have pink hair?" This is an action. I am encoding actions by how many characters their question applied to. Since they asked about pink hair, this applies to 1 character. 
+> **Example situation:** There are 10 characters left and 1 of them has pink hair, and the user asks "does your character have pink hair?" 
+
+This is an action. I am encoding actions by how many characters their question applied to. Since they asked about pink hair, this applies to 1 character. 
 
 Furthermore, since they can only ever get the same information from asking something like "does your character *NOT* have pink hair?" (which applies to 9 charaters), I treat actions M and X-M as the same. So I capture the bottom half of the action space $$a \in 1...X/2$$. There is also one other action, which is making an actual guess. I encode this as action 0. So the action space can be represented as $$a \in 0...X/2$$
 
