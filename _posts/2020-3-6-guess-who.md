@@ -6,7 +6,8 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 ---
 
 
-## The Question
+<details>
+<summary>## The Question</summary>
 
 
 > Sticking with the board game theme, from Andrew Lin comes a closer examination of a classic game of reasoning and elimination:
@@ -25,7 +26,7 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 > 
 > Extra extra credit: If N is instead 14, now how likely is it that the player who goes first will win?
 > <cite><a href="https://fivethirtyeight.com/features/how-good-are-you-at-guess-who/">How Good Are You At Guess Who?</a></cite>
-
+</details>
 
 # One Player Optimal strategy
 Before bringing in the game theory side of things, lets figure out the optimal strategy to minimize guesses in the absence of an opponent. Asking a question which eliminates people in this case removes some proportion of the people.
