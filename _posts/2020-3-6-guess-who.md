@@ -7,25 +7,26 @@ last_modified_at: 2020-03-05T13:01:27-05:00
 
 
 <details>
-<summary>## The Question</summary>
+<summary><h1>The Question</h1></summary>
+<q>
 
+Sticking with the board game theme, from Andrew Lin comes a closer examination of a classic game of reasoning and elimination:
 
-> Sticking with the board game theme, from Andrew Lin comes a closer examination of a classic game of reasoning and elimination:
-> 
-> In the game of “Guess Who,” each player first randomly (and independently of their opponent) selects one of N character tiles. While it’s unlikely, both players can choose the same character. Each of the N characters is distinct in appearance — for example, characters have different skin tones, hair color, hair length and accessories like hats or glasses.
-> 
-> Each player also has access to a board with images of all N characters. The players alternate taking turns, and during each turn a player has two options:
-> 
-> Make a specific guess as to their opponent’s selected character. If correct, the player who made the guess immediately wins. Otherwise, that player immediately loses.
-> Ask a yes-or-no question about their opponent’s chosen character, in order to eliminate some of the candidates. Importantly, if only one possible character is left after the question, the player must still wait until their next turn to officially guess that character.
-> Assume both players are highly skilled at choosing yes-or-no questions, so that they can always craft a question to potentially rule out (or in) any desired number of candidates. Also, both are playing to maximize their own probability of winning.
-> 
-> Let’s keep things (relatively) simple, and suppose that N = 4. How likely is it that the player who goes first will win?
-> 
-> Extra credit: If N is instead 24 (the number of characters in the original “Guess Who” game), now how likely is it that the player who goes first will win?
-> 
-> Extra extra credit: If N is instead 14, now how likely is it that the player who goes first will win?
-> <cite><a href="https://fivethirtyeight.com/features/how-good-are-you-at-guess-who/">How Good Are You At Guess Who?</a></cite>
+In the game of “Guess Who,” each player first randomly (and independently of their opponent) selects one of N character tiles. While it’s unlikely, both players can choose the same character. Each of the N characters is distinct in appearance — for example, characters have different skin tones, hair color, hair length and accessories like hats or glasses.
+
+Each player also has access to a board with images of all N characters. The players alternate taking turns, and during each turn a player has two options:
+
+Make a specific guess as to their opponent’s selected character. If correct, the player who made the guess immediately wins. Otherwise, that player immediately loses.
+Ask a yes-or-no question about their opponent’s chosen character, in order to eliminate some of the candidates. Importantly, if only one possible character is left after the question, the player must still wait until their next turn to officially guess that character.
+Assume both players are highly skilled at choosing yes-or-no questions, so that they can always craft a question to potentially rule out (or in) any desired number of candidates. Also, both are playing to maximize their own probability of winning.
+
+Let’s keep things (relatively) simple, and suppose that N = 4. How likely is it that the player who goes first will win?
+
+Extra credit: If N is instead 24 (the number of characters in the original “Guess Who” game), now how likely is it that the player who goes first will win?
+
+Extra extra credit: If N is instead 14, now how likely is it that the player who goes first will win?
+<cite><a href="https://fivethirtyeight.com/features/how-good-are-you-at-guess-who/">How Good Are You At Guess Who?</a></cite>
+</q>
 </details>
 
 # One Player Optimal strategy
