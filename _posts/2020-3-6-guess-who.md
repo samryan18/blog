@@ -40,14 +40,14 @@ Theorem:
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
 
 \begin{align}
-    E[n_elim | M] & = (M/X) * (X-M)  + ((X-M)/X) * M \\
+    E[\text{n_elim} | M] & = (M/X) * (X-M)  + ((X-M)/X) * M \\
     & = (1/X) * (2M*(X-M)) \\
     & = (1/X) * (2MX - 2M^2)
 \end{align}
 
 To find the optimal value of a function, we can set the derivative to zero:
 \begin{align}
-d E[n_elim | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \\
+d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \\
                      &= (1/X) * (2X - 4M) \\
 \rightarrow (1/X) * (2X - 4M) &= 0
 \text{now we can remove (2/x) since we're setting to 0 to find an optimum}
