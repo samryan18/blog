@@ -134,16 +134,10 @@ Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function u
 
 ### Some math that looks fancier than it is
 
-$$ E[R_t | a] = E(R|a) + \sum $$
-
-
-
-<!-- 
 $$\begin{eqnarray}
-    E[\text{n_elim} | M] =& (M/X)(X-M)  + ((X-M)/X)M \nonumber \\ \\
-    =& (1/X)(2M(X-M)) \nonumber \\ \\
-    =& (1/X)(2MX - 2M^2)
-\end{eqnarray}$$ -->
+    V_{\Pi}(S) = E[G_t | S,A,\Pi]       \nonumber \\ \\
+    &= E[R_t | A] + E[G_t | S,A,\Pi]        \nonumber \\ \\
+\end{eqnarray}$$
 
 ---
 
