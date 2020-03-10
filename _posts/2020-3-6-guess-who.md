@@ -124,7 +124,7 @@ A **reward** is a tangible benefit to an agent. In this case, there are two poss
 A mapping of states to actions. Call this $$A$$. (You really call this $$\Pi$$ but I called it A in the code and I'm lazy)
 
 ##### Value Function
-Yay, we made it to the fun part. In this type of problem (Markov Decision Process), value functions exist w.r.t. a policies.
+Yay, we made it to the fun part. In this type of problem (Markov Decision Process), value functions always exist w.r.t. a policy.
 
 We define a **value function under a policy** as the long term expectation of reward following that policy. Call this $$V_{A}$$.
 
