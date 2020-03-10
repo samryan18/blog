@@ -61,7 +61,7 @@ $$\begin{eqnarray}
     \rightarrow M^* =& \frac{X}{2} \nonumber \\ \\
 \end{eqnarray}$$
 
-To confirm our critical point is a maximum, we set the second derivative to zero:
+To confirm our critical point is a maximum, check the sign of the second derivative:
 
 $$\begin{eqnarray}
     \frac{d^2 E[\text{n_elim} | M]}{dM^2} =& \frac{d((1/X)(2X - 4M))}{dM} \nonumber \\ \\
