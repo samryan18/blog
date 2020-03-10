@@ -38,17 +38,14 @@ Theorem:
 > if we have X characters remaining, and we ask a binary question which applies to M characters, we have a M/X chance of eliminating X-M characters and an (X-M)/X chance of eliminating M characters.
 
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
-\[
+
 \begin{align}
     E[\text{n_elim} | M] & = (M/X) * (X-M)  + ((X-M)/X) * M \\
     & = (1/X) * (2M*(X-M)) \\
     & = (1/X) * (2MX - 2M^2)
 \end{align}
-\]
 
 To find the optimal value of a function, we can set the derivative to zero:
-
-\[
 \begin{align}
 d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \\
                      &= (1/X) * (2X - 4M) \\
@@ -56,15 +53,12 @@ d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \\
 \text{now we can remove (2/x) since we're setting to 0 to find an optimum}
 X-2M = 0 \rightarrow X = (1/2)*M
 \end{align}
-\]
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
-\[
 \begin{align}
 d^2 E[\text{n_elim} | M] / dM^2 &= d((1/X) * (2X - 4M)) / dM \\
 &= -4/X \text{(strictly negative) (so we have a max!)} \\
 \end{align}
-\]
 
 So the optmal result here is to always choose M = X/2.
 
