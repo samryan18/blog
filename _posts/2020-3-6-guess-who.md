@@ -39,7 +39,7 @@ Our goal is to narrow it down quickly. There are lots of ways to frame this:
     * maximizing information gain (ask high entropy questions)
 
 Theorem:
-> if we have X characters remaining, and we ask a binary question which applies to M characters, we have a M/X chance of eliminating X-M characters and an (X-M)/X chance of eliminating M characters.
+> If we have X characters remaining, and we ask a binary question which applies to M characters, we have a M/X chance of eliminating X-M characters and an (X-M)/X chance of eliminating M characters.
 
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
 
@@ -51,17 +51,17 @@ $$\begin{eqnarray}
 
 To find the optimal value of a function, we can set the derivative to zero:
 $$\begin{eqnarray}
-d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
-                     &= (1/X) * (2X - 4M) \nonumber \\
-\rightarrow (1/X) * (2X - 4M) &= 0 \nonumber \\
-\text{now we can remove (2/x) since we're setting to 0 to find an optimum} \nonumber \\
-X-2M = 0 \rightarrow X = (1/2)*M \nonumber \\
+    d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
+                        &= (1/X) * (2X - 4M) \nonumber \\
+    \rightarrow (1/X) * (2X - 4M) &= 0 \nonumber \\
+    \text{now we can remove (2/x) since we're setting to 0 to find an optimum} \nonumber \\
+    X-2M = 0 \rightarrow X = (1/2)*M \nonumber \\
 \end{eqnarray}$$
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
 $$\begin{align}
-d^2 E[\text{n_elim} | M] / dM^2 &= d((1/X) * (2X - 4M)) / dM \nonumber \\
-&= -4/X \text{(strictly negative) (so we have a max!)} \nonumber \\
+    d^2 E[\text{n_elim} | M] / dM^2 &= d((1/X) * (2X - 4M)) / dM \nonumber \\
+                                    &= -4/X \text{(strictly negative) (so we have a max!)} \nonumber \\
 \end{align}$$
 
 So the optmal result here is to always choose M = X/2.
