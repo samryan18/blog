@@ -86,7 +86,7 @@ Interestingly, this high risk framework only applies in situations where "doing 
 Let's work backwards from endgame. If either player is down to 1 remaining candidate, the other player must guess, because on the following turn they will lose.
 
 
-## Some math that looks fancier than it is
+## RL Basics
 Let's introduce the concepts of states, actions, rewards, policies and value functions.
 
 ##### State
@@ -125,7 +125,7 @@ I'm going to skip a few steps ahead and make the assumption that we're following
 
 Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function under that policy. (In the code and henceforth, I'm just going to refer to these as A and V).
 
-##### Back to the math
+##### Some math that looks fancier than it is
 
 $$ E[R_t | a] = E(R|a) + \sum $$
 
