@@ -96,6 +96,10 @@ In this case, a game state can be captured by the following:
 2. How many characters has player 1 narrowed it down to?
 3. How many characters has player 2 narrowed it down to?
 
+In the code, I capture states with a tuple (X_1, X_2) representing how many characters the two players have narrowed it down to.
+
+I swap the ordering if player 2 is up.
+
 ##### Action
 An **action** is just... well an action that a user can take.
 
@@ -120,17 +124,18 @@ I'm going to skip a few steps ahead and make the assumption that we're following
 
 Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function under that policy. (In the code and henceforth, I'm just going to refer to these as A and V).
 
+##### Back to the math
+
+$$ E[R_t | a] = E(R|a) + \sum $$
 
 
 
-
-
-
+<!-- 
 $$\begin{eqnarray}
     E[\text{n_elim} | M] =& (M/X)(X-M)  + ((X-M)/X)M \nonumber \\ \\
     =& (1/X)(2M(X-M)) \nonumber \\ \\
     =& (1/X)(2MX - 2M^2)
-\end{eqnarray}$$
+\end{eqnarray}$$ -->
 
 ## Dynamic Programming Approach
 <script src="https://gist.github.com/samryan18/ee1a06108aea97c9b28b9674802e2103.js"></script>
