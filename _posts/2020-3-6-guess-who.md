@@ -52,7 +52,7 @@ $$\begin{eqnarray}
 To find the optimal value of a function, we can set the derivative to zero:
 
 $$\begin{eqnarray}
-    d E[\text{n_elim} | M] / dM =& d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
+    \frac{E[\text{n_elim} | M]}{dM} =& d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
                         =& (1/X) * (2X - 4M) \nonumber \\
     \rightarrow (1/X) * (2X - 4M) =& 0 \nonumber \\
     X-2M = 0 &\rightarrow X = (1/2)*M \nonumber \\
@@ -61,7 +61,7 @@ $$\begin{eqnarray}
 To confirm our critical point is a maximum, we set the second derivative to zero:
 
 $$\begin{eqnarray}
-    d^2 E[\text{n_elim} | M] / dM^2 =& d((1/X) * (2X - 4M)) / dM \nonumber \\
+    \frac{d^2 E[\text{n_elim} | M]}{dM^2} =& d((1/X) * (2X - 4M)) / dM \nonumber \\
                                     =& -4/X \nonumber \\
                                     =& \text{This is strictly negative so we have a max!} \nonumber \\
 \end{eqnarray}$$
