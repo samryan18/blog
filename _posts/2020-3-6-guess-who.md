@@ -55,7 +55,8 @@ $$\begin{eqnarray}
     \frac{E[\text{n_elim} | M]}{dM} =& \frac{d((1/X) * (2MX - 2M^2))}{dM} \nonumber \\
                         =& (1/X) * (2X - 4M) \nonumber \\
     \rightarrow (1/X) * (2X - 4M) =& 0 \nonumber \\
-    X-2M = 0 &\rightarrow X = (1/2)*M \nonumber \\
+    X-2M =& 0 \nonumber \\
+    \rightarrow X =& (1/2)*M \nonumber \\
 \end{eqnarray}$$
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
