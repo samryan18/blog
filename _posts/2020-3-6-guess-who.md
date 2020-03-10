@@ -29,6 +29,8 @@ Extra extra credit: If N is instead 14, now how likely is it that the player who
 </q>
 </details>
 
+---
+
 ## One Player Optimal strategy
 Before bringing in the game theory side of things, lets figure out the optimal strategy to minimize guesses in the absence of an opponent. Asking a question which eliminates people in this case removes some proportion of the people.
 
@@ -71,6 +73,8 @@ $$\begin{eqnarray}
 
 So the optimal result here is to always choose M = X/2.
 
+---
+
 ## But guess who is two player!?
 Turns out, the above aside is a nice thought experiment but doesn't actually return an optimal strategy in the two player game.
 
@@ -85,6 +89,7 @@ Interestingly, this high risk framework only applies in situations where "doing 
 
 Let's work backwards from endgame. If either player is down to 1 remaining candidate, the other player must guess, because on the following turn they will lose.
 
+---
 
 ## RL Basics
 Let's introduce the concepts of states, actions, rewards, policies and value functions.
@@ -127,7 +132,7 @@ I'm going to skip a few steps ahead and make the assumption that we're following
 
 Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function under that policy. (In the code and henceforth, I'm just going to refer to these as A and V).
 
-##### Some math that looks fancier than it is
+## Some math that looks fancier than it is
 
 $$ E[R_t | a] = E(R|a) + \sum $$
 
