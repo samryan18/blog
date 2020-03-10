@@ -76,8 +76,8 @@ Turns out, the above aside is a nice thought experiment but doesn't actually ret
 This is trickier because we no longer trying to minimize total guesses — we are trying to beat an opponent. There are analogies here to the coin flipping riddler from two weeks ago. When you are behind (e.g. if the opponent is 1 move away from winning), it is advantageous to take more risk.
 
 (wish I had more non-sports analogies) but this is just like:
-    * pulling the goalie in hockey when your team is down at the end of the game
-    * throwing a hail mary in football
+* pulling the goalie in hockey when your team is down at the end of the game
+* throwing a hail mary in football
 
 Interestingly, this only applies in situations where "doing your best" is not the goal but rather being above some arbitrary limit (by any amount) is the goal. This seems like an interesting distintion between sports and real life.
 
