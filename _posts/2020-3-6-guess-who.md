@@ -121,7 +121,7 @@ Furthermore, since they can only ever get the same information from asking somet
 A **reward** is a tangible benefit to an agent. In this case, there are two possible rewards: winning and losing. We encode these as +1 and -1.
 
 ##### Policy
-A mapping of states to actions. Call this $$A$$.
+A mapping of states to actions. Call this $$A$$. (You really call this $$\Pi$$ but I called it A in the code and I'm lazy)
 
 ##### Value Function
 Yay, we made it to the fun part. In this type of problem (Markov Decision Process), value functions exist w.r.t. a policies.
