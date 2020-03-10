@@ -2,7 +2,7 @@
 layout: post
 title: FiveThirtyEight Riddler Classic
 
-last_modified_at: 2020-03-05T13:01:27-05:00
+last_modified_at: 2020-03-07T13:01:27-05:00
 ---
 
 ## The Question
