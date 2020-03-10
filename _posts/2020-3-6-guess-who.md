@@ -44,9 +44,9 @@ Theorem:
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
 
 $$\begin{eqnarray}
-    E[\text{n_elim} | M] & = (M/X) * (X-M)  + ((X-M)/X) * M \nonumber \\
-    & = (1/X) * (2M*(X-M)) \nonumber \\
-    & = (1/X) * (2MX - 2M^2)
+    E[\text{n_elim} | M] &= (M/X) * (X-M)  + ((X-M)/X) * M \nonumber \\
+    &= (1/X) * (2M*(X-M)) \nonumber \\
+    &= (1/X) * (2MX - 2M^2)
 \end{eqnarray}$$
 
 To find the optimal value of a function, we can set the derivative to zero:
@@ -54,8 +54,8 @@ $$\begin{eqnarray}
     d E[\text{n_elim} | M] / dM &= d((1/X) * (2MX - 2M^2)) / dM \nonumber \\
                         &= (1/X) * (2X - 4M) \nonumber \\
     \rightarrow (1/X) * (2X - 4M) &= 0 \nonumber \\
-    \text{now we can remove (2/x) since we're setting to 0 to find an optimum} \nonumber \\
-    X-2M = 0 \rightarrow X = (1/2)*M \nonumber \\
+    \text{now we can remove }(2/x)&\text{ since we're setting to 0 to find an optimum} \nonumber \\
+    X-2M = 0 &\rightarrow X = (1/2)*M \nonumber \\
 \end{eqnarray}$$
 
 To confirm our critical point is a maximum, we set the second derivative to zero:
