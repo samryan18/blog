@@ -55,7 +55,7 @@ To find the optimal value of a function, we can set the derivative to zero:
 
 $$\begin{eqnarray}
     \frac{E[\text{n_elim} | M]}{dM} =& \frac{d((1/X)(2MX - 2M^2))}{dM} \nonumber \\ \\
-                        =& (1/X) * (2X - 4M) \nonumber \\ \\
+                        =& (1/X)(2X - 4M) \nonumber \\ \\
     \rightarrow (1/X) * (2X - 4M^*) =& 0 \nonumber \\ \\
     X-2M^* =& 0 \nonumber \\ \\
     \rightarrow M^* =& \frac{X}{2} \nonumber \\ \\
@@ -69,7 +69,7 @@ $$\begin{eqnarray}
                                     & \text{This is strictly negative so we have a max!} \nonumber \\ \\
 \end{eqnarray}$$
 
-So the optmal result here is to always choose M = X/2.
+So the optimal result here is to always choose M = X/2.
 
 # But guess who is two player!?
 Turns out, the above aside is a nice thought experiment but doesn't actually return an optimal strategy in the two player game.
