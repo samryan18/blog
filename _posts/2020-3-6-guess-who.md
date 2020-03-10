@@ -36,8 +36,8 @@ Let's start to build an intuition with an example before jumping into some math.
 There are N characters, each has a probability of 1/N of being the selected character. We can ask a question which has the possibility of eliminating any number of them from 1...N-1.
 
 Our goal is to narrow it down quickly. There are lots of ways to frame this:
-    * binary search
-    * maximizing information gain (ask high entropy questions)
+* binary search
+* maximizing information gain (ask high entropy questions)
 
 Theorem:
 > If we have X characters remaining, and we ask a binary question which applies to M characters, we have a M/X chance of eliminating X-M characters and an (X-M)/X chance of eliminating M characters.
