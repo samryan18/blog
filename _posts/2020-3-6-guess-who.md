@@ -46,15 +46,15 @@ Our goal is to narrow it down quickly. There are lots of ways to frame this:
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice corollary:
 
 $$\begin{eqnarray}
-    E[\text{n_elim} | M] =& (M/X) * (X-M)  + ((X-M)/X) * M \nonumber \\ \\
-    =& (1/X) * (2M*(X-M)) \nonumber \\ \\
-    =& (1/X) * (2MX - 2M^2)
+    E[\text{n_elim} | M] =& (M/X)(X-M)  + ((X-M)/X)M \nonumber \\ \\
+    =& (1/X)(2M(X-M)) \nonumber \\ \\
+    =& (1/X)(2MX - 2M^2)
 \end{eqnarray}$$
 
 To find the optimal value of a function, we can set the derivative to zero:
 
 $$\begin{eqnarray}
-    \frac{E[\text{n_elim} | M]}{dM} =& \frac{d((1/X) * (2MX - 2M^2))}{dM} \nonumber \\ \\
+    \frac{E[\text{n_elim} | M]}{dM} =& \frac{d((1/X)(2MX - 2M^2))}{dM} \nonumber \\ \\
                         =& (1/X) * (2X - 4M) \nonumber \\ \\
     \rightarrow (1/X) * (2X - 4M^*) =& 0 \nonumber \\ \\
     X-2M^* =& 0 \nonumber \\ \\
@@ -64,7 +64,7 @@ $$\begin{eqnarray}
 To confirm our critical point is a maximum, we set the second derivative to zero:
 
 $$\begin{eqnarray}
-    \frac{d^2 E[\text{n_elim} | M]}{dM^2} =& \frac{d((1/X) * (2X - 4M))}{dM} \nonumber \\ \\
+    \frac{d^2 E[\text{n_elim} | M]}{dM^2} =& \frac{d((1/X)(2X - 4M))}{dM} \nonumber \\ \\
                                     =& \frac{-4}{X} \nonumber \\ \\
                                     & \text{This is strictly negative so we have a max!} \nonumber \\ \\
 \end{eqnarray}$$
