@@ -5,9 +5,9 @@ title: FiveThirtyEight Riddler Classic
 last_modified_at: 2020-03-05T13:01:27-05:00
 ---
 
-
+## The Question
 <details>
-<summary><h1>The Question</h1></summary>
+<summary>See question</summary>
 <q>
 
 Sticking with the board game theme, from Andrew Lin comes a closer examination of a classic game of reasoning and elimination:
