@@ -43,11 +43,11 @@ Theorem:
 
 I'll skip confirming this fact (pretty easy to see on paper), but we can see a nice correlary:
 
-\begin{align}
+$$\begin{align}
     E[\text{n_elim} | M] & = (M/X) * (X-M)  + ((X-M)/X) * M \\ \\
     & = (1/X) * (2M*(X-M)) \\ \\
     & = (1/X) * (2MX - 2M^2)
-\end{align}
+\end{align}$$
 
 To find the optimal value of a function, we can set the derivative to zero:
 \begin{align}
