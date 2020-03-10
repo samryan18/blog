@@ -145,5 +145,7 @@ $$\begin{eqnarray}
     =& (1/X)(2MX - 2M^2)
 \end{eqnarray}$$ -->
 
-## Dynamic Programming Approach
+---
+
+## Dynamic Programming to Solve This
 <script src="https://gist.github.com/samryan18/ee1a06108aea97c9b28b9674802e2103.js"></script>
