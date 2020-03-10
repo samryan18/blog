@@ -80,7 +80,8 @@ This is trickier because we no longer trying to minimize total guesses — we ar
 * pulling the goalie in hockey when your team is down at the end of the game
 * throwing a hail mary in football
 
-Interestingly, this only applies in situations where "doing your best" is not the goal but rather being above some arbitrary limit (by any amount) is the goal. This seems like an interesting distinction between sports and real life.
+Aside—
+Interestingly, this high risk framework only applies in situations where "doing your best" is not the goal but rather being above some arbitrary limit (by any amount) at the end of some arbitrary amount of time is the goal. This seems like an interesting distinction between sports and real life.
 
 Let's work backwards from endgame. If either player is down to 1 remaining candidate, the other player must guess, because on the following turn they will lose.
 
