@@ -132,7 +132,7 @@ I'm going to skip a few steps ahead and make the assumption that we're following
 
 Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function under that policy. (In the code and henceforth, I'm just going to refer to these as A and V).
 
-## Some math that looks fancier than it is
+### Some math that looks fancier than it is
 
 $$ E[R_t | a] = E(R|a) + \sum $$
 
