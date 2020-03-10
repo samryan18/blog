@@ -29,7 +29,7 @@ Extra extra credit: If N is instead 14, now how likely is it that the player who
 </q>
 </details>
 
-# One Player Optimal strategy
+## One Player Optimal strategy
 Before bringing in the game theory side of things, lets figure out the optimal strategy to minimize guesses in the absence of an opponent. Asking a question which eliminates people in this case removes some proportion of the people.
 
 Let's start to build an intuition with an example before jumping into some math.
@@ -71,7 +71,7 @@ $$\begin{eqnarray}
 
 So the optimal result here is to always choose M = X/2.
 
-# But guess who is two player!?
+## But guess who is two player!?
 Turns out, the above aside is a nice thought experiment but doesn't actually return an optimal strategy in the two player game.
 
 This is trickier because we no longer trying to minimize total guesses — we are trying to beat an opponent. There are analogies here to the coin flipping riddler from two weeks ago. When you are behind (e.g. if the opponent is 1 move away from winning), it is advantageous to take more risk.
@@ -84,5 +84,5 @@ Interestingly, this only applies in situations where "doing your best" is not th
 
 Let's work backwards from endgame. If either player is down to 1 remaining candidate, the other player must guess, because on the following turn they will lose.
 
-# Dynamic Programming Approach
+## Dynamic Programming Approach
 <script src="https://gist.github.com/samryan18/ee1a06108aea97c9b28b9674802e2103.js"></script>
