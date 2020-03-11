@@ -133,7 +133,7 @@ I'm going to skip a few steps ahead and make the assumption that we're following
 Let's call $$A^*$$ the optimal policy and $$V^* = V_{A^*}$$ the value function under that policy. (In the code and henceforth, I'm just going to refer to these as A and V).
 
 ### Some math that looks fancier than it is
-
+TODO
 $$\begin{eqnarray}
     V_{\Pi}(S) = E[G_t | S,A,\Pi]       \nonumber \\ \\
     &= E[R_t | A] + E[G_t | S,A,\Pi]        \nonumber \\ \\
